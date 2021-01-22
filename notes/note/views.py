@@ -1,7 +1,14 @@
 from django.shortcuts import render
 from .models import *
+
+
 # Create your views here.
 def homepage(request):
+
+    return render(request, 'home.html')
+
+
+def note(request):
     notes = Note.objects.all()
 
-    return render(request, 'home.html', context={"notes": notes})
+    return render(request, 'notes.html', context={"notes": notes})
