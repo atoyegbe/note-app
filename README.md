@@ -1,2 +1,2 @@
 # note-app
-# This is tutorial project
+# This is a tutorial project.
